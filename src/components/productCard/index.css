@@ -1,15 +1,24 @@
-img {
-    height: 100px;
-    width: 100px;
-    padding-left: 90px;
-}
-
 .ProductCard {
-    height: 600px;
-    width: 300px;
     border: 2px solid black;
     border-radius: 20px;
     margin: 20px;
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    /* Change to column layout */
+    max-width: 300px;
+    /* Maximum width of the card */
+}
+
+.ProductCard img {
+    height: auto;
+    /* Allow the image to adjust its height */
+    max-width: 100%;
+    /* Image takes up the full width of its container */
+}
+
+.cardDetails {
+    padding: 10px;
+    flex: 1;
+    /* Allow this div to grow to fill available space */
 }

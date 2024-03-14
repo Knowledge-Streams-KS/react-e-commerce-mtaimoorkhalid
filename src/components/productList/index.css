@@ -1,0 +1,19 @@
+.ProductList {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to next line */
+    justify-content: space-between;
+    /* Distribute space between cards */
+}
+
+.ProductCard {
+    flex: 0 1 calc(33.33% - 20px);
+    /* Adjust card width */
+    margin: 10px;
+    /* Adjust margin between cards */
+}
+
+.ProductCard img {
+    max-width: 100%;
+    /* Image takes up the full width of its container */
+}
